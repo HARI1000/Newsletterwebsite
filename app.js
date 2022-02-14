@@ -37,7 +37,7 @@ response.on("data",function(data){
 console.log(JSON.parse(jsondata));
 })
  })
- //request.write(jsondata);
+ request.write(jsondata);
  request.end();
 })
 app.post("/failure.html",function(req,res){
